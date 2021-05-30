@@ -1,6 +1,6 @@
 package Collections;
 
-public class LoginPageCollection {
+public class SignInPageCollection {
 
     public static String loginPageUrl = "https://www.lolaflora.com/en-es/login";
 

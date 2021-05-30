@@ -3,7 +3,7 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+public class SignInPage {
 
     By userName = By.id("EmailLogin");
     By password = By.id("Password");
@@ -12,8 +12,8 @@ public class LoginPage {
     By textForgotPassword = By.id("Mail");
     By btnForgetPswSend = By.cssSelector("body > main > div > div:nth-child(1) > div >" +
             " form.form-password-recovery.js-password-recovery.is-hidden > div:nth-child(3) > button");
-    By btnSignUp = By.cssSelector("body > main > div > div:nth-child(2) > div > a");
-    By btnSignInWithFacebook = By.cssSelector("body > main > div > div:nth-child(2) > div > div > a");
+    By btnSignUp = By.cssSelector("body > main > div > div:nth-child(2) > div > a.membership-advantages__button--member-login.btn.btn-warning.btn-lg");
+    By btnSignInWithFacebook = By.cssSelector("body > main > div > div:nth-child(2) > div > a.login__facebook.btn.btn-info.btn-xlg.full-width");
 
     public static By alertModal = By.cssSelector("#modalBox > div > div > div.modal-body");
     public static By requiredFieldEmail = By.id("EmailLogin-error");
@@ -22,7 +22,7 @@ public class LoginPage {
 
     private final WebDriver  driver;
 
-    public LoginPage(WebDriver driver){
+    public SignInPage(WebDriver driver){
         this.driver = driver;
     }
 
